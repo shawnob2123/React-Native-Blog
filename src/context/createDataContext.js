@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default (reducer, actions, initialState) => { //actions will be an obj with dif callback funcs to make available to child components //need to be customized/changes
+export default (reducer, actions, initialState) => { 
   const Context = React.createContext();
 
   const Provider = ({ children }) => {
